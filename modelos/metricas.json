@@ -1,0 +1,33 @@
+{
+  "modelo": "Regresión Logística",
+  "version": "20261122T005351Z",
+  "validacion_cruzada": [
+    {
+      "modelo": "Regresión Logística",
+      "accuracy_media": 0.802,
+      "accuracy_desv": 0.0142,
+      "f1_media": 0.7301,
+      "f1_desv": 0.0217,
+      "roc_auc_media": 0.8532,
+      "roc_auc_desv": 0.0218
+    },
+    {
+      "modelo": "Random Forest",
+      "accuracy_media": 0.8146,
+      "accuracy_desv": 0.0322,
+      "f1_media": 0.7339,
+      "f1_desv": 0.0453,
+      "roc_auc_media": 0.8692,
+      "roc_auc_desv": 0.0236
+    }
+  ],
+  "prueba": {
+    "accuracy": 0.8045,
+    "precision": 0.7931,
+    "recall": 0.6667,
+    "f1": 0.7244,
+    "roc_auc": 0.8427
+  },
+  "registros_entrenamiento": 712,
+  "registros_prueba": 179
+}
