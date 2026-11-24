@@ -199,7 +199,7 @@ def mostrar_campos():
         st.selectbox("Clase del boleto", options=list(CLASES), format_func=CLASES.get, key="Pclass",
                      help="La clase determinaba la ubicación del camarote en el barco.")
         st.number_input("Tarifa pagada (libras)", min_value=0.0, max_value=600.0, step=1.0, key="Fare",
-                        help="Precio del boleto. En el dataset va de 0 a 512 libras.")
+                        help="Precio del boleto. De 0 a 512 libras.")
         st.selectbox("Puerto de embarque", options=list(PUERTOS), format_func=PUERTOS.get, key="Embarked",
                      help="Puerto donde el pasajero subió al barco.")
 
@@ -458,4 +458,4 @@ with tab_modelo:
     mostrar_modelo(paquete, cargar_metricas())
 
 st.divider()
-st.caption("Datos: Titanic (Kaggle) · 891 pasajeros · Proyecto educativo de Ciencia de Datos.")
+st.caption("Datos: Titanic  · 891 pasajeros")

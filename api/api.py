@@ -89,7 +89,7 @@ class DatosPasajero(BaseModel):
     Fare: float = Field(
         ..., ge=0, title="Tarifa",
         description="Tarifa pagada por el boleto, en libras esterlinas de 1912. "
-                    "Debe ser mayor o igual a 0 (en el dataset va de 0 a 512.33).",
+                    "Debe ser mayor o igual a 0.",
         examples=[80.0],
     )
     Embarked: Literal["S", "C", "Q"] = Field(
